@@ -1,0 +1,12 @@
+{
+  "C:\\Users\\tmarupudi\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-api\\2.47.1\\selenium-api-2.47.1.jar": {
+    "location": "C:\\Users\\tmarupudi\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-api\\2.47.1\\selenium-api-2.47.1.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027C:\\Users\\tmarupudi\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-api\\2.47.1\\selenium-api-2.47.1.jar\u0027. Neither fingerprint \u0027f586a13419a297427f01266c1013117232808373\u0027 nor symbolic name \u0027org.seleniumhq.selenium.selenium-api\u0027 are known."
+  },
+  "C:\\Program Files\\Java\\jdk1.8.0_60\\jre\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_60\\jre\\lib\\rt.jar",
+    "status": "RESOLVED"
+  }
+}
