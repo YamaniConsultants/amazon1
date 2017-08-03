@@ -1,23 +1,23 @@
-# amazon1
-#Feature to automate amazon website
-Feature: Shop online at Amazon.co.uk 
+# Maven
 
-@test
-Scenario: Sign into Amazon.co.uk
-Given I have opened 'amazon.co.uk' on my browser
-When I click Sign-in
-  And Enter valid 'user name' and 'password' and click signin
-Then I am logged in
-     
-@test
-Scenario: Search for product and verify the first result is related to your product
-Given 'amazon.co.uk' is open and I am logged in with 'user name' and 'password'
-When I search for "####(pick a product of your choice)" 
-Then The first result has the word  "####" in it 
-    
-@test 
-Scenario: verify that the original price of the product matches the price seen in the basket
-Given 'amazon.co.uk' is open and I am logged in with 'user name' and 'password'
-  And I add "####(pick a product of your choice)" to my basket
-When I check my basket total
-Then It should match the price of "####(pick a product of your choice)"
+Maven is available under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+- [Maven Issue Tracker](https://issues.apache.org/jira/browse/MNG)
+- [Maven Wiki](https://cwiki.apache.org/confluence/display/MAVEN/Index)
+- [Building Maven](https://maven.apache.org/guides/development/guide-building-maven.html)
+- [Running Core ITs](https://maven.apache.org/core-its/core-it-suite/)
+
+## Bootstrapping Basics
+
+If you want to bootstrap Maven, you'll need:
+
+- Java 1.7+
+- Maven 3.0.5 or later
+
+Run Maven, specifying a location into which the completed Maven distro should be installed:
+
+```
+mvn -DdistributionTargetDir="$HOME/app/maven/apache-maven-3.5.x-SNAPSHOT" clean package
+```
+
+Once the build completes, you should have a new Maven distro ready to roll in that directory!
